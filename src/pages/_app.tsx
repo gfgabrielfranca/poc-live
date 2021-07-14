@@ -1,5 +1,4 @@
 import App, { AppProps, AppContext } from 'next/app'
-// import { GlobalStyles } from '../../styles/global'
 import "../../styles/global.css"
 
 export type Theme = {
@@ -11,12 +10,7 @@ export type Theme = {
 }
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <>
-      <Component {...pageProps} />
-      {/* <GlobalStyles /> */}
-    </>
-  )
+  return <Component {...pageProps} />
 }
 
 MyApp.getInitialProps = async (appContext: AppContext) => {

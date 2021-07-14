@@ -1,8 +1,11 @@
 import { GetStaticProps } from 'next'
 import Image from 'next/image'
 import styles from '../../styles/home.module.css'
+import { Theme } from './_app'
 
-import { HomeProps } from '../templates/Home'
+type HomeProps = {
+  theme: Theme
+}
 
 export default function HomePage({ theme }: HomeProps) {
   return (
