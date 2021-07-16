@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 MyApp.getInitialProps = async (appContext: AppContext) => {
   const appProps = await App.getInitialProps(appContext);
 
-  const response = await fetch(`https://theme-beta.vercel.app/${process.env.CLIENT_ID}`);
+  const response = await fetch(`https://theme-sand.vercel.app/api/clients/${process.env.CLIENT_ID}`);
   const theme: Theme = await response.json();
 
   const pageProps = { ...appProps.pageProps, theme };

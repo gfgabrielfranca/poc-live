@@ -1,4 +1,3 @@
-import { GetStaticProps } from 'next'
 import Image from 'next/image'
 import styles from '../../styles/home.module.css'
 import { Theme } from './_app'
@@ -52,11 +51,4 @@ export default function HomePage({ theme }: HomeProps) {
       </div>
     </>
   )
-}
-
-export const getStaticProps: GetStaticProps = async () => {
-  return { 
-    props: {},
-    revalidate: 60
-  };
 }

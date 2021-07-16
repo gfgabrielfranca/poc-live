@@ -1,6 +1,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['theme-beta.vercel.app'],
+    domains: ['theme-sand.vercel.app'],
   },
 }
